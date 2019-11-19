@@ -1,3 +1,809 @@
 <resources>
-    <string name="app_name">BabaPao</string>
+    <string name="app_name">TomatoLiveLibrary</string>
+
+    <string name="fq_live_sdk_app_name">直播平台</string>
+    <string name="fq_tomato_money_str">番茄币</string>
+    <string name="fq_my_money_str"><Data><![CDATA[我的番茄币：<font color="#ff5252">%1$s</font> ]]></Data></string>
+    <string name="fq_car_buy_gold"><Data><![CDATA[<big><big>%1$s</big></big> 番茄币]]></Data></string>
+    <string name="fq_car_buy_gold_tips"><Data><![CDATA[<big>%1$s</big>  <font color="#ff5f52">%2$s番茄币</font>]]></Data></string>
+    <string name="fq_current_buy_gold">%1$s番茄币</string>
+
+    <string name="fq_matisse_album_name_all">全部</string>
+    <string name="fq_matisse_button_preview">预览</string>
+    <string name="fq_matisse_button_apply_default">使用</string>
+    <string name="fq_matisse_button_apply">使用(%1$d)</string>
+    <string name="fq_matisse_button_back">返回</string>
+    <string name="fq_matisse_photo_grid_capture">拍一张</string>
+    <string name="fq_matisse_empty_text">还没有图片或视频</string>
+    <string name="fq_matisse_button_ok">我知道了</string>
+    <string name="fq_matisse_error_over_count_default">您已经达到最大选择数量</string>
+    <string name="fq_matisse_error_over_count">最多只能选择 %1$d 个文件</string>
+    <string name="fq_matisse_error_under_quality">图片质量太低</string>
+    <string name="fq_matisse_error_over_quality">图片质量太高</string>
+    <string name="fq_matisse_error_file_type">不支持的文件类型</string>
+    <string name="fq_matisse_error_type_conflict">不能同时选择图片和视频</string>
+    <string name="fq_matisse_error_no_video_activity">没有支持视频预览的应用</string>
+    <string name="fq_matisse_error_over_original_size">"该照片大于 %1$d M，无法上传将取消勾选原图"</string>
+    <string name="fq_matisse_error_over_original_count">"有 %1$d 张照片大于 %2$d M\n无法上传，将取消勾选原图"</string>
+    <string name="fq_matisse_button_original">原图</string>
+    <string name="fq_matisse_button_sure_default">确定</string>
+    <string name="fq_matisse_button_sure">确定(%1$d)</string>
+
+    <string name="fq_srl_header_pulling">下拉可以刷新</string>
+    <string name="fq_srl_header_refreshing">正在刷新…</string>
+    <string name="fq_srl_header_loading">等待底部加载完成…</string>
+    <string name="fq_srl_header_release">释放立即刷新</string>
+    <string name="fq_srl_header_finish">刷新完成</string>
+    <string name="fq_srl_header_failed">刷新失败</string>
+    <string name="fq_srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="fq_srl_header_secondary">释放进入二楼</string>
+
+    <string name="fq_srl_footer_pulling">上拉加载更多</string>
+    <string name="fq_srl_footer_release">释放立即加载</string>
+    <string name="fq_srl_footer_loading">正在加载…</string>
+    <string name="fq_srl_footer_refreshing">等待头部刷新完成…</string>
+    <string name="fq_srl_footer_finish">加载完成</string>
+    <string name="fq_srl_footer_failed">加载失败</string>
+    <string name="fq_srl_footer_nothing">没有更多数据了</string>
+
+    <string name="text_empty">还没有数据呢！</string>
+    <string name="hint_text_dialog_loading_data">数据正在加载中...</string>
+    <string name="fq_text_input_hint">和大家说点什么</string>
+    <string name="fq_text_send_msg">发送</string>
+    <string name="fq_btn_shielded_cancel">取消屏蔽</string>
+    <string name="fq_btn_shielded">屏蔽</string>
+    <string name="fq_sure_shielded_cancel_user">确认取消屏蔽该用户？</string>
+    <string name="fq_anchor_start_banned">主播已开启全房间禁言</string>
+    <string name="fq_anchor_cancel_banned">主播已解除全房间禁言</string>
+    <string name="fq_live_preview">预览</string>
+    <string name="fq_start_live">开始直播</string>
+    <string name="fq_live_peak_num">人气 %1$d</string>
+    <string name="fq_live_room_num">房间号 %1$s</string>
+    <string name="fq_sure_shielded_user">确认屏蔽该用户？</string>
+    <string name="fq_banned_time">禁言时长</string>
+    <string name="fq_text_length">您的发言不能超过53字符</string>
+    <string name="fq_text_CD">您的发言CD还有%d秒</string>
+    <string name="fq_text_same_content">不能发送相同内容</string>
+    <string name="fq_btn_sure">确定</string>
+    <string name="fq_btn_confirm">确认</string>
+    <string name="fq_btn_cancel">取消</string>
+    <string name="fq_btn_home">返回首页</string>
+    <string name="fq_btn_go_auth">去认证</string>
+    <string name="fq_btn_submit">提交</string>
+    <string name="fq_btn_save">保存</string>
+    <string name="btn_banned">禁言</string>
+    <string name="btn_cancel_banned">取消禁言</string>
+    <string name="btn_kick_out">踢出并拉黑</string>
+
+
+    <string name="fq_hit_home_search">搜索房间号/主播昵称/直播主题</string>
+    <string name="fq_home_top">排行榜</string>
+    <string name="fq_home_hot">推荐</string>
+    <string name="fq_home_all">全部</string>
+    <string name="fq_home_attention">关注</string>
+    <string name="fq_home_btn_show">查看</string>
+    <string name="fq_home_btn_attention">+ 关注</string>
+    <string name="fq_home_btn_attention_yes">已关注</string>
+    <string name="fq_no_attention_tips">还没有关注任何主播</string>
+    <string name="fq_show_like_anchor_tips">去逛逛看发现自己喜欢的主播吧~</string>
+    <string name="fq_your_recommend">为您推荐</string>
+    <string name="fq_text_anchor">主播</string>
+    <string name="fq_text_live">直播</string>
+    <string name="fq_text_all">全部</string>
+    <string name="fq_text_attention_num">关注：%1$s</string>
+    <string name="fq_text_anchor_no_open_tips">主播暂未开播\n去其他直播间逛逛吧~</string>
+    <string name="fq_text_living">正在直播</string>
+    <string name="fq_text_hot_search">热门搜索</string>
+    <string name="fq_text_history_search">历史搜索</string>
+    <string name="fq_text_history_clear">清空</string>
+    <string name="fq_text_guess_like">猜你喜欢</string>
+    <string name="fq_text_top_charm">魅力偶像榜</string>
+    <string name="fq_text_top_strength">实力富豪榜</string>
+    <string name="fq_text_list_empty">这里静悄悄的</string>
+    <string name="fq_text_list_empty_tips">客官换个地方逛逛？</string>
+    <string name="fq_text_list_empty_income">暂无个人收益记录</string>
+    <string name="fq_text_list_empty_consume">暂无个人消费记录</string>
+    <string name="fq_text_list_empty_top">还没有收到礼物，快去直播吧～</string>
+    <string name="fq_text_list_empty_house_manager">点击搜索可以添加房管</string>
+    <string name="fq_text_list_empty_banned_setting">搜索用户昵称，添加禁言</string>
+    <string name="fq_text_list_empty_waiting">虚位以待</string>
+    <string name="fq_text_list_empty_watch_record">暂无观看记录</string>
+    <string name="fq_text_list_auth_tips">需要绑定手机并完成实名认证\n才能开始直播</string>
+    <string name="fq_text_list_trans_tips">翻译功能开启后将自动为您将聊天文字翻译为您的本机语言</string>
+    <string name="fq_text_empty_tips_anchor">没有找到相关的用户</string>
+    <string name="fq_text_empty_tips_live">没有找到相关的直播间</string>
+    <string name="fq_text_attention_success">关注成功</string>
+    <string name="fq_text_attention_cancel_success">取消关注成功</string>
+    <string name="fq_text_kick_out_live">您已被主播/管理员移出直播间</string>
+    <string name="fq_text_live_title">直播主题：%1$s</string>
+    <string name="fq_text_no_attention_oneself">不能关注自己哟</string>
+    <string name="fq_text_search_content">请输入搜索内容</string>
+    <string name="fq_text_whether_recharge">是否去充值</string>
+    <string name="fq_home_top_goddess">排行榜</string>
+    <string name="fq_home_top_goddess_tips">魅力偶像/实力富豪排行</string>
+    <string name="fq_top_day">日榜</string>
+    <string name="fq_top_month">月榜</string>
+    <string name="fq_top_all">总榜</string>
+    <string name="fq_top_week">周榜</string>
+    <string name="fq_top_show_all">查看总榜</string>
+    <string name="fq_top_contribution">贡献榜</string>
+
+
+    <string name="fq_go_to_index">进入直播间</string>
+    <string name="fq_live_end">直播已结束</string>
+    <string name="fq_live_end_suspend">直播已封停</string>
+    <string name="fq_last_live_state_time">上次直播时间：%1$s</string>
+    <string name="fq_video_loading">正在努力加载中...</string>
+    <string name="fq_video_load_fail">视频加载失败</string>
+    <string name="fq_room_info_fail">进入房间失败</string>
+    <string name="fq_text_no_network">网络失去连接，请检查网络设置</string>
+    <string name="fq_text_no_network_send_gift">网络断开，无法发送礼物</string>
+    <string name="fq_text_network_error_send_gift">网络异常，无法发送礼物</string>
+    <string name="fq_text_network_error_live_end">网络异常，直播结束</string>
+    <string name="fq_text_mobile_net">您正在使用非WIFI网络，继续观看将会消耗流量，是否继续？</string>
+    <string name="fq_text_mobile_net_live">您正在使用非WIFI网络，继续直播将会消耗流量，是否继续？</string>
+    <string name="fq_text_start_live_count_tips">这是您第%1$s次直播，继续加油~</string>
+    <string name="fq_text_live_gift_notice_tips"><Data><![CDATA[<font color="#F45921">%1$s</font>送给<font color="#F45921">%2$s</font>%3$s个%4$s，快来围观吧～]]></Data></string>
+    <string name="fq_text_live_trumpet_notice_tips"><Data><![CDATA[<font color="#FFF08E">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%1$s:</font> <font color="#26747F">%2$s  (</font> <font color="#FFF08E">%3$s</font> <font color="#26747F">的直播间)</font>]]></Data></string>
+    <string name="fq_text_have_new_msg">有新消息</string>
+    <string name="fq_text_gift_multiple">x</string>
+    <string name="fq_text_go_on">继续观看</string>
+    <string name="fq_text_stop">停止观看</string>
+    <string name="fq_text_go_on_live">继续直播</string>
+    <string name="fq_text_stop_live">停止直播</string>
+    <string name="fq_live_law_text">同意遵守《直播服务协议》</string>
+    <string name="fq_location">火星</string>
+    <string name="fq_beauty">美颜</string>
+    <string name="fq_mirror">镜像</string>
+    <string name="fq_secret">私密</string>
+    <string name="fq_text_gift">礼物</string>
+    <string name="fq_text_send">赠送</string>
+    <string name="fq_over_insufficient">余额不足，请先充值</string>
+    <string name="fq_live_joinroom_notify">进入了直播间</string>
+    <string name="fq_welcome">欢迎</string>
+    <string name="fq_live_join_notify_nobility">光临直播间</string>
+    <string name="fq_up_img_title">封面设置</string>
+    <string name="fq_up_img_intro">请上传本人高清露脸无遮挡美图</string>
+    <string name="fq_live_cover">直播间封面</string>
+    <string name="fq_nav_cover">推荐位封面</string>
+    <string name="fq_click_for_up">点击上传封面</string>
+    <string name="fq_up_cover">确定上传</string>
+    <string name="fq_no_sd_card">没有sd卡</string>
+    <string name="fq_tomato_money_gain">收获</string>
+    <string name="fq_tomato_money_reward">打赏</string>
+    <string name="fq_live_room_id">ID: %1$s</string>
+    <string name="fq_name">姓名\u3000</string>
+    <string name="fq_idcard">身份证</string>
+    <string name="fq_phone">手机号</string>
+    <string name="fq_code">验证码</string>
+    <string name="fq_put_name">请输入您的真实姓名</string>
+    <string name="fq_put_idcard">请输入您的身份证号</string>
+    <string name="fq_put_phone">请填写手机号</string>
+    <string name="fq_put_code">请输入验证码</string>
+    <string name="fq_get_code">获取验证码</string>
+    <string name="fq_up_zidcard">上传身份证正面</string>
+    <string name="fq_up_idcard">上传身份证背面</string>
+    <string name="fq_commit_identy">提交认证</string>
+    <string name="fq_complete_identy">完成实名认证，成为主播</string>
+    <string name="fq_wait_identy">信息认证中，请耐心等待…</string>
+    <string name="fq_already_identy">已认证</string>
+    <string name="fq_identy_fail">认证失败</string>
+    <string name="fq_re_identy">重新认证</string>
+    <string name="fq_identy_info">认证信息</string>
+    <string name="fq_anchor_name">姓名：</string>
+    <string name="fq_anchor_phone">电话：</string>
+    <string name="fq_want_live">我要直播</string>
+    <string name="fq_anchor_identy">主播认证</string>
+    <string name="fq_sure_finish_live">确定结束直播吗？</string>
+    <string name="fq_no_pic">您还没有任何照片！</string>
+    <string name="fq_text_input_banned_hint">主播开启了全局禁言</string>
+    <string name="fq_banned"><Data><![CDATA[系统消息：<font color="#ffffff">%1$s</font> 被 <font color="#ffffff">%2$s</font> 禁言了]]></Data></string>
+    <string name="fq_banned_cancel"><Data><![CDATA[系统消息：<font color="#ffffff">%1$s</font> 被 <font color="#ffffff">%2$s</font> 解除禁言]]></Data></string>
+    <string name="fq_banned_time_to">禁言到%1$s</string>
+    <string name="fq_need_one_pic">还没有选择封面哦</string>
+    <string name="fq_up_cover_succ">上传成功，等待审核</string>
+    <string name="fq_up_cover_fail">封面上传失败</string>
+    <string name="fq_avatar_dialog_sign_tips">这个人很懒，什么都没留下</string>
+    <string name="fq_room_id">房间号：%1$s</string>
+    <string name="fq_anchor_live_end_pre_notice_tips">%1$s发布预告：\n%2$s</string>
+
+    <string name="fq_anchor_live_end_gold"><Data><![CDATA[%1$s<br><font color="#969696">获得%2$s</font>]]></Data></string>
+    <string name="fq_anchor_live_end_personal"><Data><![CDATA[%1$s<br><font color="#969696">人气值</font>]]></Data></string>
+    <string name="fq_anchor_live_end_timer"><Data><![CDATA[%1$s<br><font color="#969696">直播时长</font>]]></Data></string>
+
+    <string name="fq_my_live">我的直播</string>
+    <string name="fq_my_live_income_record">收支明细</string>
+    <string name="fq_my_live_watch_record">观看历史</string>
+    <string name="fq_my_live_my_car">我的座驾</string>
+    <string name="fq_my_live_my_garage">我的车库</string>
+    <string name="fq_my_live_car_mall">座驾商城</string>
+    <string name="fq_my_live_car_mall_detail">座驾详情</string>
+    <string name="fq_my_live_my_guard">我的守护</string>
+    <string name="fq_my_live_my_income">我的收益</string>
+    <string name="fq_my_live_dedicate">贡献榜</string>
+    <string name="fq_my_live_house_setting">房管设置</string>
+    <string name="fq_my_live_banned_setting">禁言设置</string>
+    <string name="fq_my_live_grade">我的等级</string>
+    <string name="fq_my_live_user_grade">用户等级</string>
+    <string name="fq_my_live_anchor_grade">主播等级</string>
+    <string name="fq_my_live_pre_notice">直播预告</string>
+    <string name="fq_my_live_income_detail">收入明细</string>
+    <string name="fq_my_live_consume_detail">支出明细</string>
+    <string name="fq_my_live_convert">兑换</string>
+    <string name="fq_my_live_withdraw">提现</string>
+    <string name="fq_my_live_watch_count">观看人数：%1$s</string>
+    <string name="fq_my_live_income">收入：%1$s%2$s</string>
+    <string name="fq_my_live_gift_send_desc"><Data><![CDATA[送给 <font color="#ff5252">%1$s</font> %2$sx%3$s]]></Data></string>
+    <string name="fq_my_live_income_num">贡献%1$s%2$s</string>
+    <string name="fq_my_live_house_manager">设为房管</string>
+    <string name="fq_my_live_house_manager_cancel">取消房管</string>
+    <string name="fq_my_live_house_manager_search_hint">搜索用户昵称添加或解除房管</string>
+    <string name="fq_my_live_banned_search_hint">搜索用户昵称添加或解除禁言</string>
+    <string name="fq_my_live_current_house_personal">当前房管人数：%1$d/%2$d</string>
+    <string name="fq_my_live_current_banned_personal">当前禁言人数：%1$d</string>
+    <string name="fq_live_input_title">请输入标题</string>
+    <string name="fq_my_live_pre_notice_tips">请输入预告内容（5-25个字）</string>
+    <string name="fq_my_live_pre_notice_check_tips">*审核通过后，需要间隔10分钟才能再次修改</string>
+    <string name="fq_my_live_current_pre_notice_tips">当前预告：%1$s</string>
+    <string name="fq_my_live_no_current_pre_notice_tips">暂无直播预告</string>
+    <string name="fq_my_live_new_pre_notice_tips">新预告：%1$s  审核中</string>
+    <string name="fq_my_live_pre_notice_chat_short_tips">预告长度太短，最少5个汉字（包括空格和符号）</string>
+    <string name="fq_my_live_pre_notice_chat_long_tips">预告长度太长，最多25个汉字（包括空格和符号）</string>
+    <string name="fq_my_live_sure_submit_pre_notice">确定提交新的直播预告吗？</string>
+    <string name="fq_my_live_grade_privilege">等级特权</string>
+    <string name="fq_my_live_fast_add_grade_privilege">如何快速提升等级</string>
+    <string name="fq_my_live_send_gift">赠送礼物</string>
+    <string name="fq_my_live_accept_gift">接收礼物</string>
+    <string name="fq_my_live_send_gift_tips">1%1$s/1经验</string>
+    <string name="fq_my_live_watch_live">观看直播</string>
+    <string name="fq_my_live_watch_live_tips">每日至多120经验</string>
+    <string name="fq_my_live_watch_live_anchor_tips">1经验/1分钟</string>
+    <string name="fq_my_live_diligent_start_live">勤奋直播</string>
+    <string name="fq_my_live_grade_privilege_loading">等级特权正在设计中\n敬请期待！</string>
+    <string name="fq_my_live_grade_experience_tips"><Data><![CDATA[还需要 <font color="#ff5252">%1$s</font> 经验值到达 <font color="#ff5252">LV%2$s</font>]]></Data></string>
+    <string name="fq_my_live_grade_current_experience_tips"><Data><![CDATA[当前经验 <font color="#ff5252">%1$s</font>]]></Data></string>
+    <string name="fq_my_live_grade_current_exp">Lv%1$s\n%2$s</string>
+    <string name="fq_my_live_grade_next_exp_tips">还需要 %1$s 经验值到达 Lv%2$s</string>
+    <string name="fq_my_live_grade_current_next_exp_tips">当前经验 %1$s</string>
+
+
+    <string name="fq_my_live_search_key_desc"><Data><![CDATA[搜索 <font color="#ff5252">%1$s</font>]]></Data></string>
+    <string name="fq_my_live_banned_dialog_tips"><Data><![CDATA[是否将用户<br><font color="#ff5252">%1$s</font><br>解除禁言]]></Data></string>
+    <string name="fq_camera_bannd">相机被禁用</string>
+    <string name="fq_mic_bannd">麦克风被禁用</string>
+    <string name="fq_tip">提示</string>
+    <string name="fq_anchor_ban_content">直播间涉嫌违规，已被封停，详细信息请联系管理员</string>
+    <string name="fq_warn_tip">警告</string>
+    <string name="fq_warn_content">直播内容涉嫌违规，请立即调整，否则管理员将封停直播间</string>
+    <string name="fq_back_out_warn">撤销警告</string>
+    <string name="fq_back_out_warn_content">警告已撤销，请严格遵照直播守则</string>
+    <string name="fq_close_loaction">关闭定位</string>
+    <string name="fq_close_loaction_content">关闭定位后观众人数可能会减少，确认关闭吗？</string>
+    <string name="fq_gift_fail">房间礼物资源拉取失败</string>
+    <string name="fq_start_connect_socket">正在连接聊天服务器...</string>
+    <string name="fq_start_reconnect_socket">正在重连聊天服务器...</string>
+    <string name="fq_reconnect_suc">重连成功...</string>
+    <string name="fq_connect_suc">连接成功...</string>
+    <string name="fq_reconnect_fail">重连失败...</string>
+    <string name="fq_connect_fail">连接失败...</string>
+    <string name="fq_click_reconnect">点击重连聊天服务器</string>
+    <string name="fq_talk_something">聊点什么...</string>
+    <string name="fq_title_modify_success">标题修改成功</string>
+    <string name="fq_mirror_open">镜像已开启</string>
+    <string name="fq_mirror_close">镜像已关闭</string>
+    <string name="fq_check_law">请阅读并勾选直播协议</string>
+    <string name="fq_no_send_gift_myself">不能在自己房间使用礼物</string>
+    <string name="fq_input_title">请输入直播主题</string>
+    <string name="fq_input_label">请选择标签分类</string>
+    <string name="fq_dont_use_flash">只有后置摄像头可以使用闪光灯</string>
+    <string name="fq_know">知道了</string>
+    <string name="fq_money_not_enough">余额不足，充值后才能继续送礼物。</string>
+    <string name="fq_frozen_tip">账户已被冻结</string>
+    <string name="fq_frozen_content">该主播账号已被冻结，请联系管理员获取具体信息</string>
+    <string name="fq_net_poor_live">网络异常，请稍后开播</string>
+    <string name="fq_warn_content_out_room"><Data><![CDATA[系统消息：<font color="#ffffff">%1$s</font> 涉嫌违规，已被 <font color="#ffffff">%2$s</font> 踢出房间]]></Data></string>
+    <string name="fq_appoint_house_manage"><Data><![CDATA[系统消息：<font color="#ffffff">%1$s</font> 被任命为房管]]></Data></string>
+    <string name="fq_cancel_appoint_house_manage"><Data><![CDATA[系统消息：<font color="#ffffff">%1$s</font> 被取消了房管身份]]></Data></string>
+    <string name="fq_live_title_no_emoji">直播标题不能包含表情符号</string>
+    <string name="fq_no_emoji_search">搜索内容不能包含表情符号</string>
+    <string name="fq_mobile_tip">您正在使用移动流量</string>
+    <string name="fq_the_same_picture">粉丝与你看到的画面是相同的</string>
+    <string name="fq_the_diff_picture">粉丝与你看到的画面是相反的</string>
+    <string name="fq_uploading_cover">正在上传封面</string>
+    <string name="fq_userover_loading">余额获取中</string>
+    <string name="fq_userover_loading_fail">余额获取失败！</string>
+    <string name="fq_open_secret_live">已开启私密直播</string>
+    <string name="fq_close_secret_live">关闭私密直播</string>
+    <string name="fq_pic_inexistence">图片不存在！</string>
+    <string name="fq_pic_compress_fail">图片压缩失败！</string>
+    <string name="fq_pic_take_fail">图片拍摄失败!</string>
+    <string name="fq_pic_cut_fail">图片裁剪失败!</string>
+    <string name="fq_pic_format_error">图片格式不正确，请重选!</string>
+    <string name="fq_no_find_anim_file">没有找到动画文件！</string>
+    <string name="fq_push_error">直播初始化失败，请退出重试</string>
+    <string name="fq_back_camera_no_mirror">后置摄像头不能设置镜像！</string>
+    <string name="fq_close_mic">声音已关闭</string>
+    <string name="fq_open_mic">声音已打开</string>
+    <string name="fq_net_poor">网络不稳定，可能会影响直播效果</string>
+    <string name="fq_give_to_anchor">送给主播  </string>
+    <string name="fq_more_hit">连击</string>
+    <string name="fq_gift_loading">礼物资源正在加载中，请稍后！</string>
+    <string name="fq_shielded">已屏蔽</string>
+    <string name="fq_cancel_shielded">已取消对%1$s的屏蔽</string>
+    <string name="fq_start_live_error">开播信息错误，请稍后重试</string>
+    <string name="fq_cover_error">封面信息不存在</string>
+    <string name="fq_close_tran">关闭翻译</string>
+    <string name="fq_please_choose_gift">请选择礼物！</string>
+    <string name="fq_anchor">主播</string>
+    <string name="fq_gift_res_update">礼物资源正在更新,请稍后重试</string>
+    <string name="fq_come_soon">敬请期待...</string>
+    <string name="fq_cover_nopass">封面审核未通过</string>
+    <string name="fq_cover_retry_upload">是否重新上传？</string>
+    <string name="fq_cover_no_upload">封面未上传</string>
+    <string name="fq_cover_wait_check">封面待审核</string>
+    <string name="fq_cover_upload_orno">是否上传？</string>
+    <string name="fq_cd_tip">CD为3秒  请输入0-99整数，倍数越高间隔越长</string>
+    <string name="fq_cd_setting">发言CD设置</string>
+    <string name="fq_all_banned_tip">全局禁言（仅主播及管理员可发言）</string>
+    <string name="fq_done">完成</string>
+    <string name="fq_speak_setting">发言设置</string>
+    <string name="fq_user_protocol">用户协议</string>
+    <string name="fq_dont_start_live_repeat">不要重复开播,请耐心等待</string>
+    <string name="fq_submit_suc">提交成功</string>
+    <string name="fq_pic_upload_fail">图片上传失败</string>
+    <string name="fq_code_send_suc">验证码已发送</string>
+    <string name="fq_second">%1$s秒</string>
+    <string name="fq_choose_phone_encode">请选择手机编码</string>
+    <string name="fq_speak_level">发言等级门槛</string>
+    <string name="fq_speak_level_tip">设置后仅大于等于设置门槛等级的用户可发言</string>
+    <string name="fq_start_level_tip">已开启发言等级限制</string>
+    <string name="fq_banned_speak_level_tip">主播已开启发言等级限制，你不符合发言要求，快去打赏升级吧 </string>
+    <string name="fq_modify_title_tip">主播已修改直播为：%1$s</string>
+    <string name="fq_gift_record">礼物流水</string>
+    <string name="fq_gift_desc">%1$s  打赏了  %2$s x %3$s</string>
+    <string name="fq_gift_empty_prompt">还没有礼物收益 加油哦~</string>
+    <string name="fq_speak_level_tip_for_socket"><Data><![CDATA[系统消息：主播已开启发言门槛限制，用户等级低于<font color="#FF5252">%1$s</font>级将不可发言]]></Data></string>
+    <string name="fq_speak_level_too_low">您设置的等级低于管理员设置等级，请重新设置</string>
+    <string name="fq_system">系统</string>
+    <string name="fq_system_msg">系统消息：</string>
+    <string name="fq_select_classification">选择分类</string>
+    <string name="fq_camera_lens_switch">镜头切换</string>
+    <string name="fq_close_large_subtitle">关闭大字幕</string>
+    <string name="fq_network_something_went_wrong">网络好像出了点问题</string>
+    <string name="fq_reload">重新加载</string>
+    <string name="fq_fans">粉丝</string>
+    <string name="fq_recharge">充值</string>
+    <string name="fq_go_setting">去设置</string>
+    <string name="fq_direct_live">直接开播</string>
+    <string name="fq_open_translation">开启</string>
+    <string name="fq_open_translation_tips">是否确认打开翻译功能</string>
+    <string name="fq_modify_theme">修改主题</string>
+    <string name="fq_live_pay">付费</string>
+    <string name="fq_delete">删除</string>
+    <string name="fq_live_whitening">美白</string>
+    <string name="fq_live_skin_grinding">磨皮</string>
+    <string name="fq_live_blush">腮红</string>
+    <string name="fq_send_other_num">赠送其他数量</string>
+
+    <string name="fq_no_permission">没有相机权限或存储权限</string>
+    <string name="fq_no_permission_write">没有存储权限</string>
+    <string name="fq_no_permission_location">没有权限访问您的位置</string>
+    <string name="fq_permission_camera_allow">请在设置中允许%1$s访问您的摄像头</string>
+    <string name="fq_permission_mic_allow">请在设置中允许%1$s访问您的麦克风</string>
+    <string name="fq_permission_location_allow">请在手机系统的【设置】-【隐私】-【定位】服务中，允许%1$s访问您的定位服务</string>
+
+    <string name="fq_identity_information_does_not_match">对不起，您的身份信息不匹配，请核实后重新认证</string>
+    <string name="fq_dont_setting_bannd_yourself">不能对自己设置禁言</string>
+    <string name="fq_dont_setting_house_manager_yourself">不能设置自己为房管</string>
+    <string name="fq_sure_cancel_house_manager">确定要取消房管吗？</string>
+    <string name="fq_setting_house_manager_suc">设置房管成功</string>
+    <string name="fq_cancel_house_manager_suc">取消房管成功</string>
+    <string name="fq_no_identy">未认证</string>
+    <string name="fq_sure_clear_all_record">确定要清空所有记录?</string>
+    <string name="fq_sure_del_all_record">确定要删除吗?</string>
+    <string name="fq_panttern_date">yyyy年M月d日HH:mm:ss</string>
+    <string name="fq_mangers_manger">房管管理</string>
+    <string name="fq_15_minute">15分钟</string>
+    <string name="fq_30_minute">30分钟</string>
+    <string name="fq_1_hour">1个小时</string>
+    <string name="fq_8_hour">8个小时</string>
+    <string name="fq_1_day">1天</string>
+    <string name="fq_3_day">3天</string>
+    <string name="fq_7_day">7天</string>
+    <string name="fq_30_day">30天</string>
+    <string name="fq_goto_setting">去设置</string>
+    <string name="fq_send">送出</string>
+    <string name="fq_net_poor_retry">网络不给力，请稍后再试</string>
+    <string name="fq_net_timeout_retry">网络连接超时，请稍后再试</string>
+    <string name="fq_ten_thousand">万</string>
+    <string name="fq_just_now">刚刚</string>
+    <string name="fq_minute_ago">分钟前</string>
+    <string name="fq_hour_ago">小时前</string>
+    <string name="fq_day_ago">天前</string>
+    <string name="fq_md5_error">MD5签名过程中出现错误,指定的编码集不对,您目前指定的编码集是:</string>
+    <string name="fq_change_line">切换播放线路</string>
+    <string name="fq_change_line_1">线路1</string>
+    <string name="fq_change_line_2">线路3</string>
+    <string name="fq_change_line_3">线路5</string>
+    <string name="fq_enable_translation_level_tips">翻译功能仅对等级大于等于%1$s级用户开启，您不符合条件，快去升级吧。</string>
+    <string name="fq_guard_tips">哎呀，弹幕功能当前仅针对房间守护开启，您好像不符合要求。</string>
+    <string name="fq_open_guard">开通守护</string>
+
+    <string name="fq_btn_open">立即开通</string>
+    <string name="fq_think_again">再想想</string>
+
+    <string name="fq_guard_anchor">主播守护</string>
+    <string name="fq_guard_anchor_empty_tips">成为TA的第一个守护</string>
+    <string name="fq_guard_open_maturity_date_tips"><Data><![CDATA[尊敬的<font color="#ff5252">%1$s</font>用户您好，您的守护到期时间为<font color="#ff5252">%2$s</font>]]></Data></string>
+    <string name="fq_guard_open">开通守护</string>
+    <string name="fq_guard_rule">守护规则</string>
+    <string name="fq_guard_ta">TA的守护</string>
+    <string name="fq_guard_week">周守护</string>
+    <string name="fq_guard_month">月守护</string>
+    <string name="fq_guard_year">年守护</string>
+    <string name="fq_guard_open_tips">为主播开通守护，享受尊贵特权</string>
+    <string name="fq_guard_identity">身份标识</string>
+    <string name="fq_guard_identity_tips">观众列表、聊天区、守护榜单中展示特殊身份标识</string>
+    <string name="fq_guard_join">进场特效</string>
+    <string name="fq_guard_join_tips">拥有专属进场特效以及欢迎语</string>
+    <string name="fq_guard_privilege">尊贵特权</string>
+    <string name="fq_guard_privilege_tips">无法被主播外的其他人踢出/禁言</string>
+    <string name="fq_guard_gift">守护礼物</string>
+    <string name="fq_guard_gift_tips">即将上线～敬请期待</string>
+    <string name="fq_guard_renewal_fee">续费守护</string>
+    <string name="fq_guard_open_room_tips">房间守护可享受除弹幕外其他更多特权哟～</string>
+    <string name="fq_guard_open_dialog_tips"><Data><![CDATA[是否确认为<font color="#ff5252">%1$s</font>花费<font color="#ff5252">%2$s</font>开通<font color="#ff5252">%3$s。</font>]]></Data></string>
+    <string name="fq_guard_continue_open_tips">您当前已是守护身份，继续开通将延长守护有效期。</string>
+    <string name="fq_guard_select_type">请选择守护类型</string>
+    <string name="fq_guard_money_not_enough">余额不足，充值后才能继续开通守护。</string>
+    <string name="fq_guard_week_money">周费守护</string>
+    <string name="fq_guard_month_money">月费守护</string>
+    <string name="fq_guard_year_money">年费守护</string>
+    <string name="fq_guard_no_open_tips">您当前守护等级不支持开通此守护类型。</string>
+    <string name="fq_guard_cover_open_tips">您当前已是守护身份，继续开通将会覆盖此前守护时长。</string>
+    <string name="fq_open_guard_tip">开通了%1$s</string>
+    <string name="fq_send_danmu_tips">发一条尊贵的守护弹幕吧...</string>
+    <string name="fq_token_invalid_tip">账号信息同步失败，请重新登录</string>
+    <string name="fq_remainder_day_tips"><Data><![CDATA[<font color="#030303">剩余：</font>%1$s天]]></Data></string>
+    <string name="fq_now_equipage">立即装备</string>
+    <string name="fq_equipage_yes">已装备</string>
+    <string name="fq_car_buy_tips">即可购买即可生效，重复购买有限期累加</string>
+    <string name="fq_current_balance">当前余额</string>
+
+    <string name="fq_now_buy">立即购买</string>
+    <string name="fq_count_day">%1$s天</string>
+    <string name="fq_product_desc">商品说明</string>
+
+    <string name="fq_already_in_room">已在房间里</string>
+    <string name="fq_live_room_loading_fail_tips">房间信息加载失败，退出重试？</string>
+    <string name="fq_car_list_empty_tips">目前还没有购买座驾哦~</string>
+    <string name="fq_car_equipage_success_tips">座驾装备成功</string>
+    <string name="fq_car_equipage_cancel_tips">座驾已取消装备</string>
+    <string name="fq_text_car_top_notice_tips"><Data><![CDATA[<font color="#FFFFFF">%1$s</font><font color="#FFE1A1">%2$s购买了</font><font color="#FFFFFF">%3$s</font>]]></Data></string>
+    <string name="fq_car_anim_danmu_tips"><Data><![CDATA[乘坐 <font color="#FF9352">%1$s</font> 进入直播间]]></Data></string>
+    <string name="fq_banned_forever"><Data><![CDATA[系统消息：<font color="#FFFFFF">%1$s</font> 被 <font color="#FFFFFF">%2$s</font> 永久禁言]]></Data></string>
+    <string name="fq_btn_kick_out_forever">平台永久拉黑</string>
+    <string name="fq_btn_banned_forever">平台永久禁言</string>
+    <string name="fq_btn_cancel_banned_forever">取消平台永久禁言</string>
+    <string name="fq_super_manager">被 超级管理员 永久禁言</string>
+    <string name="fq_warn_content_out_room_forever"><Data><![CDATA[系统消息：<font color="#FFFFFF">%1$s</font> 涉嫌违规，已被 <font color="#FFFFFF">%2$s</font> 永久踢出房间]]></Data></string>
+    <string name="fq_purchase_succeeded">购买成功！</string>
+    <string name="fq_car_desc">座驾说明</string>
+    <string name="fq_text_network_error_chat">聊天服务器异常，无法发送消息</string>
+
+    <string name="fq_add">+%1$s</string>
+    <string name="fq_id">ID：</string>
+    <string name="fq_black_space">&#160;</string>
+    <string name="fq_lv">LV%1$s</string>
+    <string name="fq_private_car_buy_tips">私有座驾，您暂不符合购买条件</string>
+    <string name="fq_car_anim_enter_tips">%1$s 乘坐 %2$s 进入直播间</string>
+    <string name="fq_gift_income">礼物收益</string>
+    <string name="fq_guard_income">守护收益</string>
+    <string name="fq_gift_income_detail">礼物收益明细</string>
+    <string name="fq_guard_income_detail">守护收益明细</string>
+    <string name="fq_gift_expend">礼物支出</string>
+    <string name="fq_guard_expend">守护支出</string>
+    <string name="fq_car_expend">购买座驾</string>
+    <string name="fq_gift_expend_detail">礼物支出明细</string>
+    <string name="fq_guard_expend_detail">守护支出明细</string>
+    <string name="fq_car_expend_detail">座驾支出明细</string>
+    <string name="fq_income_reward"><Data><![CDATA[%1$s <font color="#121213">打赏</font> %2$s x%3$s]]></Data></string>
+    <string name="fq_income_open"><Data><![CDATA[%1$s <font color="#121213">开通</font> %2$s]]></Data></string>
+    <string name="fq_expend_send"><Data><![CDATA[赠送 <font color="#FF5F52">%1$s %2$s</font>个%3$s]]></Data></string>
+    <string name="fq_expend_pay"><Data><![CDATA[购买 <font color="#FF5F52">%1$s %2$s天</font>]]></Data></string>
+    <string name="fq_expend_open"><Data><![CDATA[为 <font color="#FF5F52">%1$s</font> 开通 <font color="#FF5F52">%2$s</font>]]></Data></string>
+    <string name="fq_income_total"><Data><![CDATA[当期总计：<font color="#FF5054">%1$s</font>]]></Data></string>
+    <string name="fq_appointment_time">任命时间：%1$s</string>
+    <string name="fq_last_join_live_time">最后进入房间时间：%1$s</string>
+    <string name="fq_btn_help">帮助</string>
+    <string name="add_text">添加文字</string>
+    <string name="fq_text_task">任务</string>
+    <string name="fq_task_tips">看直播，做任务，赢道具</string>
+    <string name="fq_waiver_exit">放弃并退出</string>
+    <string name="fq_sticker_add_input_tips">输入文字内容，不超过20个字</string>
+    <string name="fq_sticker_add_max_tips">至多只能添加5个文字贴片</string>
+    <string name="fq_sticker_add_edit_dialog_tips">当前有设置未保存，是否确认退出编辑？</string>
+    <string name="fq_please_wait">请稍后</string>
+    <string name="fq_receive_task">领取</string>
+    <string name="fq_receive_box">可领取</string>
+    <string name="fq_sticker_help_use_tips">贴片控件使用说明</string>
+    <string name="fq_sticker_help_use_desc_tips">使用贴片控件，可在直播的视频画面上，加入任意自定义文字。</string>
+    <string name="fq_sticker_help_save_tips">已保存控件样式</string>
+    <string name="fq_sticker_help_see_tips">观众看到的画面</string>
+    <string name="fq_sticker_help_add_tips">添加文字贴片</string>
+    <string name="fq_sticker_help_move_tips">按住拖动位置</string>
+    <string name="fq_sticker_help_oper">操作方法</string>
+    <string name="fq_backpack">背包</string>
+    <string name="fq_backpack_empty_tips">抢宝箱，做任务，得道具</string>
+    <string name="fq_props">道具相关</string>
+    <string name="fq_props_name_tips"><Data><![CDATA[%1$s <font color="#FF5F52">x%2$s</font>]]></Data></string>
+    <string name="fq_props_expend">道具支出</string>
+    <string name="fq_props_income">道具收益</string>
+    <string name="fq_props_expend_detail">道具支出明细</string>
+    <string name="fq_props_income_detail">道具收益明细</string>
+    <string name="fq_props_free">免费</string>
+    <string name="fq_props_settle">可结算</string>
+    <string name="fq_props_expend_tips">赠送给 %1$s</string>
+    <string name="fq_props_income_tips">%1$s 赠送</string>
+    <string name="fq_not_start">领取尚未开始，请耐心等待...</string>
+    <string name="fq_giftbox_tips">发送互动消息能提升领取概率哦~</string>
+    <string name="fq_props_add_exp">+%1$s 经验</string>
+    <string name="fq_props_permanent">永久</string>
+    <string name="fq_gift_box_broadcast_tips"><Data><![CDATA[<font color="#c7c7c7">%1$s 领取了</font> %2$s <font color="#c7c7c7">派送的 </font>%3$s个%4$s]]></Data></string>
+    <string name="fq_gift_box_toast_tips">恭喜你，成功领取了 %1$s 派送的%2$s个%3$s</string>
+    <string name="fq_text_no_network_send_prop">网络异常，无法发送道具！</string>
+    <string name="fq_please_choose_prop">请选择道具！</string>
+    <string name="fq_socket_reconnet_click"><Data><![CDATA[聊天服务器已断开，<u><font color="#FF5252">请点击连接</font></u>]]></Data></string>
+    <string name="fq_last_join_live_time_2"><Data><![CDATA[最后进入房间时间：<font color="#FFC232">%1$s</font>]]></Data></string>
+    <string name="fq_live_ad">广告</string>
+    <string name="fq_report">举报</string>
+    <string name="fq_report_live_content">举报直播内容</string>
+    <string name="fq_report_live_input_content">请输入举报内容</string>
+    <string name="fq_report_live_radio_1">违规广告</string>
+    <string name="fq_report_live_radio_2">盗播</string>
+    <string name="fq_report_live_radio_3">血腥暴力</string>
+    <string name="fq_report_live_radio_4">消极直播</string>
+    <string name="fq_report_live_radio_5">反动</string>
+    <string name="fq_report_live_radio_6">其他</string>
+    <string name="fq_report_live_tips">*若举报内容核实有效，将有几率获得直播道具奖励</string>
+    <string name="fq_report_live_success_tips">感谢您的举报。管理员在后台核实举报内容后，将第一时间处理。</string>
+    <string name="fq_report_live_success_title">您已成功举报房间</string>
+    <string name="fq_report_personal"><Data><![CDATA[举报人：<font color="#AEAEAE">%1$s</font>]]></Data></string>
+    <string name="fq_reported"><Data><![CDATA[被举报人：<font color="#AEAEAE">%1$s</font>  房间ID：<font color="#AEAEAE">%2$s</font>]]></Data></string>
+    <string name="fq_report_live_title"><Data><![CDATA[直播标题：<font color="#AEAEAE">%1$s</font>]]></Data></string>
+    <string name="fq_report_live_code_error">验证码不正确</string>
+    <string name="fq_input_content_emoji_tips">输入内容不能包含表情符号</string>
+    <string name="fq_unable_start_live_error_tips_1">开播限制时间异常，无法开播</string>
+    <string name="fq_unable_start_live_error_tips_2">当前处于开播限制时段，无法开播</string>
+    <string name="fq_manage">管理</string>
+    <string name="fq_nobility_danmu">贵族弹幕</string>
+    <string name="fq_normal_danmu">普通弹幕</string>
+    <string name="fq_guard_danmu">守护弹幕</string>
+    <string name="fq_trumpet_danmu">广播喇叭</string>
+    <string name="trumpet_count_status_normal"><Data><![CDATA[平台喇叭剩余：<font color="#FF5F52">%1$s个</font>&nbsp;&nbsp;&nbsp;&nbsp;状态：正常]]></Data></string>
+    <string name="trumpet_count_status_freeze"><Data><![CDATA[平台喇叭剩余：<font color="#FF5F52">%1$s个</font>&nbsp;&nbsp;&nbsp;&nbsp;状态：<font color="#FF5F52">冻结</font>]]></Data></string>
+    <string name="trumpet_count">平台喇叭剩余：%1$s个</string>
+    <string name="trumpet_count_status">状态：%1$s</string>
+    <string name="trumpet_count_rule"><Data><![CDATA[喇叭规则:<br>平台喇叭消息将对全平台直播间广播<br>消息内容，限制小于等于20个字符<br>点击输入框，输入喇叭内容<br><br><font color="#FF8634">禁止发送违规内容喇叭广播，若违反禁止，平台将有权利 封禁违规账号</font>]]></Data></string>
+    <string name="fq_trumpet">平台喇叭：</string>
+    <string name="fq_guard_open_room_tips2">房间守护可免费发送守护弹幕</string>
+    <string name="fq_open_nobility">开通贵族</string>
+    <string name="fq_nobility_danmu_open_tip"><Data><![CDATA[贵族弹幕·<font color="#2680DD">伯爵</font>及以上可用]]></Data></string>
+    <string name="fq_nobility_trumpet_open_tip"><Data><![CDATA[平台喇叭·<font color="#2680DD">伯爵</font>及以上可用]]></Data></string>
+    <string name="fq_nobility_danmu_tip">弹幕更酷炫，消息更出众!</string>
+    <string name="fq_nobility_trumpet_tip">全平台发声，大声说出爱!</string>
+    <string name="fq_nobility_smr_tip">我是神秘人，猜猜我是谁!</string>
+    <string name="fq_nobility_hide_tip">贡献榜隐身·国王及以上贵族可用</string>
+    <string name="fq_nobility_my">我的贵族</string>
+    <string name="fq_nobility_renewal_fee">续费贵族</string>
+    <string name="fq_nobility_privilege_setting">特权设置</string>
+    <string name="fq_nobility_privilege_setting_tips_1">进直播间隐身</string>
+    <string name="fq_nobility_privilege_hidden_in_rank_list">榜单隐身</string>
+    <string name="fq_nobility_privilege_setting_tips_3">置顶直播间</string>
+    <string name="fq_nobility_privilege_desc">特权介绍</string>
+    <string name="fq_vip">贵宾</string>
+    <string name="fq_vip_place_count">贵宾席位（%1$s）</string>
+    <string name="fq_vip_place_count_desc">贵族/守护可上座</string>
+    <string name="fq_vip_empty_tips">成为我的第一位贵族吧！</string>
+    <string name="fq_vip_empty_tips_2">开通贵族支持你喜爱的主播，还可以获取丰富特权！</string>
+    <string name="fq_vip_empty_label_tips_1">进场欢迎</string>
+    <string name="fq_vip_empty_label_tips_2">专属礼物</string>
+    <string name="fq_vip_empty_label_tips_3">贵族弹幕</string>
+    <string name="fq_vip_empty_label_tips_4">全场喇叭</string>
+    <string name="fq_vip_empty_label_tips_5">全站隐身</string>
+    <string name="fq_vip_empty_label_tips_6">推荐置顶</string>
+    <string name="fq_nobility_open">开通贵族</string>
+    <string name="fq_nobility_privilege_know">了解贵族特权</string>
+    <string name="fq_nobility">贵族</string>
+    <string name="fq_nobility_open_badge_name">贵族 · %1$s</string>
+    <string name="fq_nobility_open_privilege_count">专属特权%1$s/14</string>
+    <string name="fq_nobility_open_first_tips"><Data><![CDATA[首开 <font color="#FF5F52">%1$s</font>/月 赠送%2$s 贵族%3$s]]></Data></string>
+    <string name="fq_nobility_open_fee_tips"><Data><![CDATA[续费 %1$s/月 赠送%2$s 贵族%3$s]]></Data></string>
+    <string name="fq_nobility_open_no_tips">您当前的贵族类型不支持购买此类型贵族</string>
+    <string name="fq_nobility_open_order">订单确认</string>
+    <string name="fq_nobility_benefit_anchor">受益主播：%1$s（%2$s）</string>
+    <string name="fq_nobility_over_pay">余额支付</string>
+    <string name="fq_nobility_over_available">可用余额：%1$s %2$s</string>
+    <string name="fq_nobility_open_selected_item">选择开通/续费项目</string>
+    <string name="fq_nobility_open_valid_date">有效期%1$s个月</string>
+    <string name="fq_nobility_open_reward_tips">开通奖励%1$s贵族币，预计到账时间：%2$s</string>
+    <string name="fq_nobility_open_now_pay">%1$s%2$s 立即支付</string>
+    <string name="fq_nobility_open_record">贵族开通记录</string>
+    <string name="fq_my_account">我的账户</string>
+    <string name="fq_my_account_virtual_currency_general"><Data><![CDATA[一般%1$s &nbsp; &nbsp; &nbsp; <font color="#292929">%2$s</font>]]></Data></string>
+    <string name="fq_my_account_virtual_currency_nobility"><Data><![CDATA[贵族%1$s &nbsp; &nbsp; &nbsp; <font color="#292929">%2$s</font>]]></Data></string>
+    <string name="fq_noble_income">贵族收益</string>
+    <string name="fq_noble_expend">贵族消费</string>
+    <string name="fq_text_hide_while_entering">进场隐身</string>
+    <string name="fq_text_hide_while_entering_tip">国王及以上贵族可选开启榜单隐身，开启后首页排行榜以及直播间贡献榜内均会隐身</string>
+    <string name="fq_text_enable_hide">是否开启榜单隐身</string>
+    <string name="fq_mystery_man">神秘人</string>
+    <string name="fq_mystery_man_invisible">隐身中</string>
+    <string name="fq_text_recommended_top">推荐置顶</string>
+    <string name="fq_text_recommended_top_tip">推荐任意主播到指定直播间</string>
+    <string name="fq_noble_recommend_history">推荐历史</string>
+    <string name="fq_nobility_privilege_detail_tips_1">子爵及以上还享有开通动画</string>
+    <string name="fq_nobility_privilege_detail_tips_2">皇帝欢迎提示</string>
+    <string name="fq_nobility_privilege_detail_tips_3">国王欢迎提示</string>
+    <string name="fq_nobility_privilege_detail_tips_4">公爵欢迎提示</string>
+    <string name="fq_nobility_privilege_detail_tips_5">直播间消息前展示勋章</string>
+    <string name="fq_nobility_privilege_detail_tips_6">使用规则</string>
+    <string name="fq_nobility_privilege_detail_tips_7">喇叭消息长度小于等于20个字符，喇叭有效期30天，过期后冻结直至开通或续费伯爵以上贵族后可使用</string>
+    <string name="fq_nobility_privilege_detail_tips_8">直播间发言框选中贵族弹幕即可发送贵族弹幕</string>
+    <string name="fq_nobility_privilege_detail_tips_9">普通跑车</string>
+    <string name="fq_nobility_privilege_detail_tips_10">皇帝大金哥定制跑车</string>
+    <string name="fq_nobility_privilege_detail_tips_11">皇帝+20%</string>
+    <string name="fq_nobility_privilege_detail_tips_12">国王+18%</string>
+    <string name="fq_nobility_privilege_detail_tips_13">公爵+16%</string>
+    <string name="fq_nobility_privilege_detail_tips_14">伯爵+14%</string>
+    <string name="fq_nobility_privilege_detail_tips_15">子爵+12%</string>
+    <string name="fq_nobility_privilege_detail_tips_16">骑士+10%</string>
+    <string name="fq_nobility_privilege_detail_tips_17">贵宾席、贡献榜展示勋章</string>
+    <string name="fq_nobility_desc_faq">贵族系统FAQ</string>
+    <string name="fq_send_danmu_nobility_tips">发一条尊贵的贵族弹幕吧...</string>
+    <string name="fq_text_privilege">特权介绍</string>
+    <string name="fq_text_privilege_tip">皇帝贵族可推荐任何开播中的主播直播间2小时；</string>
+    <string name="fq_text_remain_recommend_times"><Data><![CDATA[剩余推荐次数：<font color="#ff5f52">%1$s</font> 次]]></Data></string>
+    <string name="fq_text_expired_time">（%1$s过期）</string>
+    <string name="fq_text_input_live_no">请输入主播房间号</string>
+    <string name="fq_text_search_anchor">搜索主播</string>
+    <string name="fq_text_noble_reverse_recommend">*若推荐置顶违规直播间，管理员有权收回您的推荐权限</string>
+    <string name="fq_text_recommend_public">公开推荐</string>
+    <string name="fq_text_recommend_anonymous">匿名推荐</string>
+    <string name="fq_text_search_result">搜索结果：</string>
+    <string name="fq_text_live_id">主播LV%1$s  %2$s</string>
+    <string name="fq_text_noble_living">开播中</string>
+    <string name="fq_nobility_opened">开通了%1$s</string>
+    <string name="fq_nobility_renewal">续费了%1$s</string>
+    <string name="fq_nobility_open_notice_tips_1"><Data><![CDATA[<font color="#FFF680">%1$s</font> 在 <font color="#FFF680">%2$s</font> 的直播间%3$s贵族]]></Data></string>
+    <string name="fq_nobility_open_notice_tips_1_2"><Data><![CDATA[<font color="#FFF680">%1$s</font> 在本直播间%2$s贵族]]></Data></string>
+    <string name="fq_nobility_open_notice_tips_1_3"><Data><![CDATA[<font color="#FFF680">%1$s</font> %2$s贵族]]></Data></string>
+    <string name="fq_nobility_open_notice_tips_2"><Data><![CDATA[<font color="#D82415">%1$s</font> 在 <font color="#D82415">%2$s</font> 的直播间%3$s贵族]]></Data></string>
+    <string name="fq_nobility_open_notice_tips_2_2"><Data><![CDATA[<font color="#D82415">%1$s</font> 在本直播间%2$s贵族]]></Data></string>
+    <string name="fq_nobility_open_notice_tips_2_3"><Data><![CDATA[<font color="#D82415">%1$s</font> %2$s贵族]]></Data></string>
+    <string name="fq_nobility_open_buy_user"><Data><![CDATA[<font color="#878787">购买用户：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_open_time"><Data><![CDATA[<font color="#878787">开通时间：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_open_price"><Data><![CDATA[<font color="#878787">开通价格：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_open_status"><Data><![CDATA[<font color="#878787">贵族状态：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_open_virtual_back"><Data><![CDATA[<font color="#878787">%1$s返还：</font>%2$s  已返还]]></Data></string>
+    <string name="fq_nobility_recommend_anchor"><Data><![CDATA[<font color="#878787">推荐主播：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_recommend_time"><Data><![CDATA[<font color="#878787">推荐日期：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_recommend_time_interval"><Data><![CDATA[<font color="#878787">推荐时间段：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_recommend_type"><Data><![CDATA[<font color="#878787">推荐方式：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_recommend_status"><Data><![CDATA[<font color="#878787">推荐状态：</font>%1$s]]></Data></string>
+    <string name="fq_nobility_open_name_tips_1">开通%1$s（1个月）</string>
+    <string name="fq_nobility_open_name_tips_2">续费%1$s（1个月）</string>
+    <string name="fq_nobility_open_left_anim_tips">开通 %1$s</string>
+    <string name="fq_nobility_open_left_anim_enter_tips">欢迎%1$s贵族光临本直播间</string>
+    <string name="fq_trumpet_tip">平台喇叭</string>
+    <string name="fq_text_dialog_recommend_title_public">是否确认立即公开推荐主播</string>
+    <string name="fq_text_dialog_recommend_text">推荐后主播将被置顶推荐至皇帝贵族推荐位2小时</string>
+    <string name="fq_text_sure_recommend">确认推荐</string>
+    <string name="fq_text_dialog_recommend_title_anonymous">是否确认立即匿名推荐主播</string>
+    <string name="fq_nobility_top_live_lave">剩余：%1$s次</string>
+    <string name="fq_nobility_expire_date">到期时间：%1$s</string>
+    <string name="fq_nobility_open_success_tips">开通成功</string>
+    <string name="fq_nobility_renewal_success_tips">续费成功</string>
+    <string name="fq_hide_enter_live">您已隐身进入直播间</string>
+    <string name="fq_nobility_open_loading_tips">正在准备开通仪式，请稍候</string>
+    <string name="fq_nobility_open_loading_fail_tips">开通动画下载失败，请重试</string>
+    <string name="fq_nobility_msg_open_tips">开通了 %1$s贵族</string>
+    <string name="fq_nobility_msg_renewal_tips">续费了 %1$s贵族</string>
+    <string name="fq_text_renewal">去续费</string>
+    <string name="fq_send_trumpet_suc">发送成功</string>
+    <string name="fq_trumpet_count_not_enough">发送失败，喇叭数量不足</string>
+    <string name="fq_trumpet_freezen">发送失败，喇叭已被冻结</string>
+    <string name="fq__nobility_upgrade">升级贵族</string>
+    <string name="fq_text_noble_expense"><Data><![CDATA[%1$s <font color="#FF5F52">%2$s贵族</font>]]></Data></string>
+    <string name="fq_text_noble_income"><![CDATA[<font color="#FF5F52">%1$s</font> %2$s <font color="#FF5F52">%3$s贵族</font>]]></string>
+    <string name="fq_text_open">开通</string>
+    <string name="fq_text_renew">续费</string>
+    <string name="fq_text_beneficiary">受益人：%1$s</string>
+    <string name="fq_nobility_hd_recommend_tips_1"><Data><![CDATA[神秘皇帝贵族&nbsp;正在置顶推荐你<br>推荐时间段：<font color="#DD3F32">%1$s</font>]]></Data></string>
+    <string name="fq_nobility_hd_recommend_tips_2"><Data><![CDATA[皇帝贵族&nbsp; %1$s<br>正在置顶推荐你<br>推荐时间段：<font color="#DD3F32">%2$s</font>]]></Data></string>
+    <string name="fq_text_recommend_is_not_living">仅可推荐开播中的主播，快去联系心爱的主播开播吧</string>
+    <string name="fq_text_recommend_success">推荐成功</string>
+    <string name="fq_text_recommend_count_fail_tips">当前可推荐次数为0，是否立即续费获取推荐数</string>
+    <string name="fq_text_recommend_count_fail_title_tips">推荐失败，剩余推荐数不足</string>
+    <string name="fq_text_recommend_count_fail_title_tips_2">推荐失败，该主播当前未开播</string>
+    <string name="fq_text_recommend_count_fail_title_tips_3">推荐失败，推荐位使用中</string>
+    <string name="fq_text_recommend_fail_tips_time_end"><Data><![CDATA[推荐位使用中，本轮推荐截止<font color="#FF5F52">%1$s</font>]]></Data></string>
+    <string name="fq_text_recommend_search_empty">无匹配结果</string>
+    <string name="fq_text_nobility_recommend_hot_tips"><Data><![CDATA[<font color="#D82415">神秘皇帝</font>&nbsp; 正在推荐&nbsp; <font color="#D82415">%1$s</font>&nbsp; 上热门]]></Data></string>
+    <string name="fq_text_nobility_recommend_hot_tips_2"><Data><![CDATA[<font color="#D82415">皇帝贵族%1$s</font>&nbsp; 正在推荐&nbsp; <font color="#D82415">%2$s</font>&nbsp; 上热门]]></Data></string>
+    <string name="fq_text_nobility_recommend_hot_count_title">推荐次数使用说明</string>
+    <string name="fq_text_nobility_recommend_hot_count_tips">每次开通赠送4次推荐机会。若存续时间内推荐机会未使用，贵族有效期过期后推荐机会冻结，直至下次开通皇帝贵族</string>
+    <string name="fq_text_frozen">已冻结</string>
+    <string name="fq_text_live_nobility">直播贵族</string>
+    <string name="fq_nobility_expire">贵族已过期</string>
+    <string name="fq_vip_dialog_bottom_tips">直播间在线贵族/守护进入席位</string>
+    <string name="fq_nobility_level_low">您贵族等级不够</string>
+    <string name="fq_lottery_more">更多</string>
+    <string name="fq_lottery_lucky_top">幸运榜</string>
+    <string name="fq_lottery_general_roulette">普通轮盘</string>
+    <string name="fq_lottery_luxury_roulette">豪华轮盘</string>
+    <string name="fq_lottery_lucky_value">幸运值%1$s/%2$s</string>
+    <string name="fq_lottery_1">1连抽</string>
+    <string name="fq_lottery_10">10连抽</string>
+    <string name="fq_lottery_100">100连抽</string>
+    <string name="fq_lottery_use_tips">每使用1次奖券道具，可参与1次抽奖</string>
+    <string name="fq_lottery_lave_ticket">剩余奖券：%1$s</string>
+    <string name="fq_lottery_get_ticket">获得奖券</string>
+    <string name="fq_lottery_my_backpack">我的背包</string>
+    <string name="fq_lottery_anchor_top">主播榜</string>
+    <string name="fq_lottery_user_top">用户榜</string>
+    <string name="fq_lottery_anchor_top_tips">统计主播收到的轮盘礼物数量</string>
+    <string name="fq_lottery_user_top_tips">根据获得的转盘奖品价值取前三排序，本榜单每周一刷新</string>
+    <string name="fq_lottery_anchor_top_empty_tips">暂无主播进入榜单</string>
+    <string name="fq_lottery_user_top_empty_tips">暂时还没有人获得抽奖道具</string>
+    <string name="fq_lottery_goto">去抽奖</string>
+    <string name="fq_lottery_me_try">我来试试</string>
+    <string name="fq_lottery_anchor_top_reset">榜单每日凌晨重置</string>
+    <string name="fq_goto_luckpan">去抽奖</string>
+    <string name="fq_compose_fail_tips">合成失败，道具碎片不足</string>
+    <string name="fq_compose_tips">集齐%1$s个碎片可合成限定版道具</string>
+    <string name="fq_sure_compose">是否确认合成%1$s</string>
+    <string name="fq_compose_sure_tip">消耗%1$s个碎片，合成一个%2$s</string>
+    <string name="fq_btn_sure_compose">确认合成</string>
+    <string name="fq_goto_luckpan_now">立即参与抽大奖</string>
+    <string name="fq_luck_gift_send_suc">幸运礼物赠送成功</string>
+    <string name="fq_luck_gift_send_tips">每赠送一个幸运礼物，可获得一张奖券。\n可使用奖券参与幸运转盘活动获取惊喜大奖。</string>
+    <string name="fq_lottery_plate_play">轮盘玩法</string>
+    <string name="fq_lottery_plate_play_desc">玩法介绍</string>
+    <string name="fq_lottery_record">抽奖记录</string>
+    <string name="fq_lottery_general_roulette_tips">普通轮盘（%1$s连抽）</string>
+    <string name="fq_lottery_luxury_roulette_tips">豪华轮盘（%1$s连抽）</string>
+    <string name="fq_lottery_not_won">未中奖</string>
+    <string name="fq_lottery_not_record">暂无记录</string>
+    <string name="fq_lottery_notice_tips"><Data><![CDATA[%1$s&nbsp;通过&nbsp;<font color="#FFCC62">%2$s</font>&nbsp;获得&nbsp;%3$s]]></Data></string>
+
+    <string name="fq_ticket_no_enough">奖券数量不足</string>
+    <string name="fq_get_ticket_now">立即获取</string>
+    <string name="fq_winning_tip">所有奖励均将自动置入背包存放</string>
+    <string name="fq_text_get_gift_tip"><Data><![CDATA[人品爆发，获得了<font color="#FF5F52">%1$s</font>。已触发房间广播！]]></Data></string>
+    <string name="fq_text_get_gift_tip_2"><Data><![CDATA[人品爆发，获得了<font color="#FF5F52">%1$s</font>。已触发全站广播！]]></Data></string>
+    <string name="good_well">美滋滋~</string>
+    <string name="fq_lottery_my_ticket">我的奖券</string>
+    <string name="fq_lottery_get_record">获取记录</string>
+    <string name="fq_lottery_use_record">使用记录</string>
+
+    <string name="fq_luck_notice_tips_1"><Data><![CDATA[恭喜&nbsp;<font color="#FFCF49">%1$s</font>&nbsp;在本直播间获得了&nbsp;<font color="#FFCF49">%2$s</font>]]></Data></string>
+    <string name="fq_luck_notice_tips_2"><Data><![CDATA[恭喜&nbsp;<font color="#FFCF49">%1$s</font>&nbsp;在&nbsp;%2$s&nbsp;直播间获得了&nbsp;<font color="#FFCF49">%3$s</font>]]></Data></string>
+    <string name="fq_lottery_select_date">选择日期</string>
+    <string name="fq_select_lottery_type">请选择连抽方式</string>
+    <string name="fq_lottery_boom">爆率</string>
+    <string name="fq_turntable_gift">转盘礼物</string>
+    <string name="fq_turntable_gift_expend_tips"><Data><![CDATA[赠送<font color="#FF5F52">%1$s %2$s</font>个 <font color="#FF5F52">%3$s</font>]]></Data></string>
+    <string name="fq_turntable_gift_income_tips_date">%1$s赠送 %2$s</string>
+    <string name="fq_ticket_add_tips">奖券+%1$s</string>
+    <string name="fq_ticket_sub_tips">奖券-%1$s</string>
+    <string name="fq_data_loading_fail">数据加载失败</string>
+    <string name="fq_lucky_gift_ticket_tips">赠送获得一张奖券，经验值+10</string>
+    <string name="fq_lottery_no_winning_tips">很遗憾，距离大奖只有一步之遥</string>
+    <string name="fq_lottery_lucky_value_dialog_tips">当前房间用户每抽一次积累1点幸运值；幸运值达到400点后，进入爆灯阶段，随机 选取一个奖品概率翻倍，持续180秒；普通与豪华转盘幸运值独立计算。</string>
+    <string name="fq_number_unit_one">%1$s个</string>
+    <string name="fq_number_unit_ten_thousand">%1$s万个</string>
+    <string name="fq_luck_draw">请等待抽奖结果...</string>
+    <string name="fq_homepage">主页</string>
+    <string name="fq_ta_homepage">TA的个人主页</string>
 </resources>

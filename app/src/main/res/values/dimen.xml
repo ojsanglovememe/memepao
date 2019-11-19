@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Fonts' sizes -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_small_1">13sp</dimen>
+    <dimen name="basic_text_size">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_xlarge">28sp</dimen>
+
+    <dimen name="fq_list_view_divider_height">0.3dp</dimen>
+    <dimen name="fq_divider_height">0.6dp</dimen>
+
+    <dimen name="view_margin_1">1dp</dimen>
+    <dimen name="view_margin_1_5">1.5dp</dimen>
+    <dimen name="view_margin_2">2dp</dimen>
+    <dimen name="view_margin_3">3dp</dimen>
+    <dimen name="view_margin_4">4dp</dimen>
+    <dimen name="view_margin_5">5dp</dimen>
+    <dimen name="view_margin_6">6dp</dimen>
+    <dimen name="view_margin_7">7dp</dimen>
+    <dimen name="view_margin_8">8dp</dimen>
+    <dimen name="view_margin_10">10dp</dimen>
+    <dimen name="view_margin_11">11dp</dimen>
+    <dimen name="view_margin_12">12dp</dimen>
+    <dimen name="view_margin_14">14dp</dimen>
+    <dimen name="view_margin_15">15dp</dimen>
+    <dimen name="view_margin_16">16dp</dimen>
+    <dimen name="view_margin_20">20dp</dimen>
+    <dimen name="view_margin_25">25dp</dimen>
+    <dimen name="view_margin_40">40dp</dimen>
+    <dimen name="view_margin_48">48dp</dimen>
+    <dimen name="view_margin_50">50dp</dimen>
+    <dimen name="view_margin_58">58dp</dimen>
+    <dimen name="small_radius">5dp</dimen>
+
+    <dimen name="fq_video_load_fail">13sp</dimen>
+    <dimen name="fq_toast_text_size">15sp</dimen>
+    <dimen name="fq_title_bar_size">48dp</dimen>
+    <dimen name="fq_live_base_size">13sp</dimen>
+    <dimen name="fq_live_mid_size">12sp</dimen>
+    <dimen name="fq_live_small_size">11sp</dimen>
+    <dimen name="fq_cover_title">20sp</dimen>
+    <dimen name="fq_live_item_view_padding">15dp</dimen>
+    <dimen name="fq_live_item_round_corners">6dp</dimen>
+    <dimen name="fq_dialog_bg_round_corners">10dp</dimen>
+
+    <dimen name="fq_home_m_top_icon_bg_height">36dp</dimen>
+    <dimen name="fq_home_m_top_icon_bg_width">36dp</dimen>
+    <dimen name="fq_home_m_top_icon_height">34dp</dimen>
+    <dimen name="fq_home_m_top_icon_width">34dp</dimen>
+
+    <dimen name="fq_live_bottom_icon_height">36dp</dimen>
+    <dimen name="fq_live_bottom_icon_width">36dp</dimen>
+
+    <dimen name="fq_top_avatar_bg_big_size">100dp</dimen>
+    <dimen name="fq_top_avatar_big_size">92dp</dimen>
+    <dimen name="fq_top_avatar_bg_small_size">90dp</dimen>
+    <dimen name="fq_top_avatar_small_size">82dp</dimen>
+
+    <dimen name="heart_anim_bezier_x_rand">40.0dp</dimen>
+    <dimen name="heart_anim_init_x">50.0dp</dimen>
+    <dimen name="heart_anim_init_y">25.0dp</dimen>
+    <dimen name="heart_anim_length">100.0dp</dimen>
+    <dimen name="heart_anim_length_rand">150.0dp</dimen>
+    <dimen name="heart_anim_x_point_factor">30.0dp</dimen>
+
+    <dimen name="heart_size_height">27.3dp</dimen>
+    <dimen name="heart_size_width">32.5dp</dimen>
+
+    <dimen name="gift_task_box_size">56dp</dimen>
+
+    <dimen name="fq_chat_msg_bg_radius">16dp</dimen>
+    <dimen name="fq_user_grade_bg_radius">16dp</dimen>
+    <dimen name="fq_user_grade_bg_radius_2">10dp</dimen>
+    <dimen name="fq_user_grade_bg_padding_top">6dp</dimen>
+    <dimen name="fq_user_grade_bg_padding_bottom">6dp</dimen>
+    <dimen name="fq_user_grade_bg_padding_left">7dp</dimen>
+    <dimen name="fq_user_grade_bg_padding_right">7dp</dimen>
+    <dimen name="fq_online_user_avatar_size">30dp</dimen>
+    <dimen name="fq_guard_avatar_bg_size">56dp</dimen>
+    <dimen name="fq_user_grade_stroke_size">1dp</dimen>
+    <dimen name="fq_guard_tips_pop_max_width">200dp</dimen>
+    <dimen name="fq_live_margin_width">10dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="fq_live_home_tab_height">45dp</dimen>
+    <dimen name="fq_nobility_avatar_bg_size">66dp</dimen>
+    <dimen name="fq_nobility_avatar_dialog_bg_margin">13dp</dimen>
+    <dimen name="fq_nobility_privilege_top_view_margin">15dp</dimen>
+    <dimen name="fq_nobility_danmu_bg_frame_size">1dp</dimen>
+    <dimen name="fq_nobility_privilege_tips_padding">15dp</dimen>
+    <dimen name="fq_lottery_shape_radius">16dp</dimen>
+    <dimen name="fq_lottery_shape_radius_21">30dp</dimen>
+    <dimen name="fq_lottery_turntable_bg_image_size">360dp</dimen>
+    <dimen name="fq_lottery_turntable_arc_progress_size">290dp</dimen>
+    <dimen name="fq_lottery_turntable_wheel_size">260dp</dimen>
+
+    <dimen name="image_color">28dp</dimen>
+    <dimen name="image_color_margin">6dp</dimen>
+    <dimen name="image_mode_space">32dp</dimen>
+
+
+    <!--====================================== Theme Zhihu ===========================================-->
+    <dimen name="fq_matisse_media_grid_size">48dp</dimen>
+    <dimen name="fq_matisse_media_grid_spacing">4dp</dimen>
+    <dimen name="fq_matisse_album_item_height">72dp</dimen>
+    <!--====================================== Theme Zhihu ===========================================-->
+    <dimen name="view_margin_200">200dp</dimen>
+    <dimen name="view_margin_150">150dp</dimen>
+    <dimen name="view_margin_170">170dp</dimen>
+    <dimen name="view_margin_130">130dp</dimen>
+    <dimen name="view_margin_100">100dp</dimen>
+</resources>

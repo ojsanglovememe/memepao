@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StateView">
+        <attr name="emptyResource" format="reference" />
+        <attr name="retryResource" format="reference" />
+        <attr name="loadingResource" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="gradientOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RxHeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="AndroidTagView">
+        <attr name="vertical_interval" format="dimension" />
+        <attr name="horizontal_interval" format="dimension" />
+
+        <attr name="container_border_width" format="dimension" />
+        <attr name="container_border_radius" format="dimension" />
+        <attr name="container_border_color" format="color" />
+        <attr name="container_background_color" format="color" />
+        <attr name="container_enable_drag" format="boolean" />
+        <attr name="container_drag_sensitivity" format="float" />
+        <attr name="container_max_lines" format="integer" />
+        <attr name="container_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="tag_border_width" format="dimension" />
+        <attr name="tag_corner_radius" format="dimension" />
+        <attr name="tag_horizontal_padding" format="dimension" />
+        <attr name="tag_vertical_padding" format="dimension" />
+        <attr name="tag_text_size" format="dimension" />
+        <attr name="tag_bd_distance" format="dimension" />
+        <attr name="tag_text_color" format="color" />
+        <attr name="tag_border_color" format="color" />
+        <attr name="tag_background_color" format="color" />
+        <attr name="tag_max_length" format="integer" />
+        <attr name="tag_clickable" format="boolean" />
+        <attr name="tag_selectable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="tag_text_direction" format="enum">
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
+
+        <attr name="tag_ripple_color" format="color" />
+        <attr name="tag_ripple_alpha" format="integer" />
+        <attr name="tag_ripple_duration" format="integer" />
+
+        <attr name="tag_enable_cross" format="boolean" />
+        <attr name="tag_cross_width" format="dimension" />
+        <attr name="tag_cross_color" format="color" />
+        <attr name="tag_cross_line_width" format="dimension" />
+        <attr name="tag_cross_area_padding" format="dimension" />
+        <attr name="tag_support_letters_rlt" format="boolean" />
+        <attr name="tag_background" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BGATitleBar">
+        <!-- 项目中把下面这五项定义在styles.xml里 -->
+        <attr name="bgatitlebar_leftAndRightTextColor" format="reference|color" />
+        <attr name="bgatitlebar_titleTextColor" format="reference|color" />
+        <attr name="bgatitlebar_leftAndRightTextSize" format="reference|dimension" />
+        <attr name="bgatitlebar_titleTextSize" format="reference|dimension" />
+        <attr name="bgatitlebar_leftAndRightPadding" format="reference|dimension" />
+
+        <!-- 下面这几项更具每个页面的业务写在layout中 -->
+        <attr name="bgatitlebar_leftText" format="reference|string" />
+        <attr name="bgatitlebar_rightText" format="reference|string" />
+        <attr name="bgatitlebar_rightSecondaryText" format="reference|string" />
+        <attr name="bgatitlebar_titleText" format="reference|string" />
+        <attr name="bgatitlebar_leftDrawable" format="reference" />
+        <attr name="bgatitlebar_titleDrawable" format="reference" />
+        <attr name="bgatitlebar_rightDrawable" format="reference" />
+        <attr name="bgatitlebar_rightSecondaryDrawable" format="reference" />
+        <!-- 当既有titleText，又有titleDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_titleDrawablePadding" format="reference|dimension" />
+        <!-- 当既有leftText，又有leftDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_leftDrawablePadding" format="reference|dimension" />
+        <!-- 当既有rightText，又有rightDrawable时，设置该属性 -->
+        <attr name="bgatitlebar_rightDrawablePadding" format="reference|dimension" />
+        <!-- 下面三项通常情况下不用，使用默认值就好。某个界面标题特别长并且左右文字短或者左右文字特别长并且标题特别短时单独配置 -->
+        <attr name="bgatitlebar_leftMaxWidth" format="reference|dimension" />
+        <attr name="bgatitlebar_rightMaxWidth" format="reference|dimension" />
+        <attr name="bgatitlebar_titleMaxWidth" format="reference|dimension" />
+        <!-- 标题文字是否为粗体，默认为true -->
+        <attr name="bgatitlebar_isTitleTextBold" format="boolean" />
+        <!-- 左边文字是否为粗体，默认为false -->
+        <attr name="bgatitlebar_isLeftTextBold" format="boolean" />
+        <!-- 右边文字是否为粗体，默认为false -->
+        <attr name="bgatitlebar_isRightTextBold" format="boolean" />
+    </declare-styleable>
+
+
+    <attr name="image_gallery_span_count" format="integer" />
+    <attr name="image_gallery_select_shade" format="color" />
+
+    <declare-styleable name="IMGColorRadio" tools:ignore="ResourceName">
+
+        <attr name="image_color" format="color" />
+        <attr name="image_stroke_color" format="color" />
+
+    </declare-styleable>
+    <!--====================================== Theme Zhihu ===========================================-->
+    <attr name="toolbar" format="reference" />
+    <attr name="album_dropdown_title_color" format="reference|color" />
+    <attr name="album_dropdown_count_color" format="reference|color" />
+    <attr name="album_element_color" format="reference|color" />
+    <attr name="album_thumbnail_placeholder" format="reference|color" />
+    <attr name="album_emptyView" format="reference" />
+    <attr name="album_emptyView_textColor" format="reference|color" />
+    <attr name="listPopupWindowStyle" format="reference" />
+    <attr name="page_bg" format="reference|color" />
+    <attr name="bottomToolbar_bg" format="reference|color" />
+    <attr name="bottomToolbar_preview_textColor" format="reference|color" />
+    <attr name="bottomToolbar_apply_textColor" format="reference|color" />
+    <attr name="preview_bottomToolbar_back_textColor" format="reference|color" />
+    <attr name="preview_bottomToolbar_apply_textColor" format="reference|color" />
+    <attr name="item_placeholder" format="reference|color" />
+    <attr name="item_checkCircle_backgroundColor" format="reference|color" />
+    <attr name="item_checkCircle_borderColor" format="reference|color" />
+    <attr name="capture_textColor" format="reference|color" />
+    <!--====================================== Theme Zhihu ===========================================-->
+
+
+    <declare-styleable name="AnimDownloadProgressButton">
+        <attr name="progressbtn_radius" format="float"/>
+        <attr name="progressbtn_background_color" format="color"/>
+        <attr name="progressbtn_background_second_color" format="color"/>
+        <attr name="progressbtn_text_size" format="float"/>
+        <attr name="progressbtn_text_color" format="color"/>
+        <attr name="progressbtn_text_covercolor" format="color"/>
+        <attr name="progressbtn_enable_press" format="boolean"/>
+        <attr name="progressbtn_enable_gradient" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="rlRadius" format="dimension" />
+        <attr name="rlClipBackground" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="wheelSurfView">
+        <!--类型 根据类型来加载资源 1 默认类型 用户需要提供文字和图片 2 暴力模式 用户只需要提供一张圆形的用来旋转的图片-->
+        <attr name="type" format="integer"/>
+        <!--最低圈数 默认值3 也就是说每次旋转都会最少转3圈-->
+        <attr name="minTimes" format="integer"/>
+        <!--扇形的数量 也就是奖品的份数-->
+        <attr name="typenum" format="integer"/>
+        <!--每一个扇形旋转消耗的时间-->
+        <attr name="vartime" format="integer"/>
+        <!--类型为1的时候 需要提供每个扇形上面的文字描述 长度必须和typenum一致-->
+        <attr name="deses" format="reference"/>
+        <!--类型为1的时候 需要提供每个扇形上面的图片展示 长度必须和typenum一致-->
+        <attr name="icons" format="reference"/>
+        <!--类型为1的时候 需要提供每个扇形背景颜色 长度必须和typenum一致-->
+        <attr name="colors" format="reference"/>
+        <!--中间图片的引用 有默认值 不填则使用默认值-->
+        <attr name="goImg" format="reference"/>
+        <!--圆环的图片引用 有默认值 不填则使用默认值-->
+        <attr name="huanImg" format="reference"/>
+        <!--如果类型为2 此值必填-->
+        <attr name="mainImg" format="reference"/>
+        <!--文字大小-->
+        <attr name="textSize" format="dimension"/>
+        <!--文字颜色-->
+        <attr name="textColor" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="marqueeAnimDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleMarqueeView">
+        <attr name="smvTextColor" format="reference|color" />
+        <attr name="smvTextSize" format="dimension" />
+        <!--https://github.com/android/platform_frameworks_base/blob/master/core/res/res/values/attrs.xml-->
+        <attr name="smvTextGravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="smvTextSingleLine" format="boolean" />
+        <!-- Where to ellipsize text. -->
+        <attr name="smvTextEllipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+        </attr>
+
+    </declare-styleable>
+
+
+</resources>
