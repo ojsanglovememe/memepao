@@ -16,7 +16,9 @@ public class MyClass {
 //        executer();
 //        callable();
 //        synchronized1Test();
-        synchronized2Test();
+//        synchronized2Test();
+//        interruptTest();
+        waitTest();
     }
 
     static void thread(){
@@ -149,5 +151,13 @@ public class MyClass {
      */
     static synchronized void synchronized2Test(){
         new Synchronized2Demo().runTest();
+    }
+
+    static void interruptTest(){
+        new ThreadInteractionDemo().runTest();
+    }
+
+    static void waitTest(){
+        new WaitDemo().runTest();
     }
 }
