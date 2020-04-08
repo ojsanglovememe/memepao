@@ -14,6 +14,7 @@ public class ThreadInteractionDemo implements TestDemo {
                         Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+
                         return;
                     }
                     System.out.println("number = " + i);
